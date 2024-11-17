@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reset your iLovePDF password</title>
+    <link href="../static/css/abcd.css" rel="stylesheet">
+</head>
+
+<body class="clean reset  lang-en-US ">
+    <div class="main">
+
+        <div class="auth">
+            <div class="auth__form">
+                <div class="auth__box">
+                    <form id="reset" class="form-horizontal" action="/login/forgetpassword" method="post">
+                        <input type="hidden" name="_csrf-ilovepdf"
+                            value="hivx6PbtYkgruxavOEXg_cE1Ih7EvKD0OO838Z5JHQvRQrivkaU0Imn-eM4IANHMsVpuX4bO0MBauUOy2DhWOA==">
+                        <h3 class="form__title">Reset your password</h3>
+
+                        <h4 class="form__subtitle">Enter your email and check your inbox for instructions. Please also
+                            check your spam folder.</h4>
+                        <br />
+                        <div class="form__group">
+
+
+                            <div class="input--icon input--email"><input type="text" id="userpasswordresetform-email"
+                                    class="input" name="UserPasswordResetForm[email]" placeholder="Your email"
+                                    aria-required="true"></div>
+                            <span class="error"></span>
+                            <br>
+                        </div>
+
+                        <div class="form__group" style="display: flex;flex-direction: column;align-items: center;">
+                            <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+                                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                                crossorigin="anonymous"></script>
+
+                            <label class="control-label" for="userpasswordresetform-recaptcha">Please confirm that you
+                                are not a bot.</label>
+                            <input type="hidden" id="userpasswordresetform-recaptcha" class="form-control"
+                                name="UserPasswordResetForm[reCaptcha]">
+                            <div id="userpasswordresetform-recaptcha-recaptcha-reset" class="g-recaptcha"
+                                data-sitekey="6LfQ2EUUAAAAAFA9KAjHtEVjX80N606C0Vxwj55q"jnxlknledkew kwjnd skjdsxiwoix weid wked wehe wlijd ekjh
+                                data-input-id="userpasswordresetform-recaptcha" data-form-id="reset"></div>
+
+                            <p class="help-block help-block-error"></p>
+                            <br />
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" data-loading-text="Checking..." class="btn">
+                                Send <i class="m-icon-swapright m-icon-white"></i>
+                            </button>
+                        </div>
+                        <div class="create-account">
+                            <p>
+                                Already member? <a href="{{ url_for('login')}}" id="goBackReset">
+                                    Log in</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="auth__info">
+                <div class="auth__box">
+
+                    <img style="display:block; margin-bottom:32px;"
+                        src="{{url_for('static', filename='img/forpass-page-img.jpg')}}" alt="pdf-tools">
+
+                    <h1 class="title2">Lost password?</h1>
+                    <p>No worries. Let's get you a new one quickly!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="../static/js/abcd.js"></script>
+</body>
+
+</html>

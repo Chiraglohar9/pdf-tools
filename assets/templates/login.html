@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="../static/css/abcd.css" rel="stylesheet">
+</head>
+<body class="clean   lang-en-US ">
+    <div class="main">
+
+        <div class="auth">
+            <div class="auth__form">
+                <div class="auth__box">
+                    </a>
+                    <h2 class="form__title">Login to your account</h2>
+                    <form id="loginForm" action="/login" method="post">
+                        <input type="hidden" name="_csrf-ilovepdf"
+                            value="iPnsJ4g0SsN3w-TzhTO1ITdUjkkE7PKJLi5nH0MQMPG5mLYUu0V7iBGSpsTAYINNUDPNKkfbv98cFwJUNWJTgg==">
+                        <div class="form__group ">
+                            <div class="field-loginEmail required">
+                                <div class="input--icon input--email"><input type="text" id="loginEmail" class="input"
+                                        name="LoginForm[email]" placeholder="Enter your email" autofocus="true"
+                                        aria-required="true"></div>
+                                <div class="help-block"></div>
+                            </div>
+                        </div>
+                        <div class="form__group ">
+                            <div class="field-inputPasswordAuth required">
+                                <div class="input--icon input--pwd"><input type="password" id="inputPasswordAuth"
+                                        class="input" name="LoginForm[password]" placeholder="Password"
+                                        aria-required="true"></div>
+                                <div class="help-block"></div>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <p>
+                                <a href="{{ url_for('forpass')}}" id="forget-password">Forgot your
+                                    password?</a>
+                            </p>
+                        </div>
+                        <div class="form-actions">
+                            <input type="hidden" name="remember" id="rememberAuth" value="1">
+                            <button type="submit" data-loading-text="Checking..." class="btn" id="loginBtn">
+                                Log in <i class="m-icon-swapright m-icon-white"></i>
+                            </button>
+                        </div>
+                        <div class="create-account">
+                            <p>
+                                Don't have an account?&nbsp;&nbsp;<a href="{{ url_for('sign')}}"
+                                    id="goRegister">Create an account</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="auth__info">
+                <div class="auth__box auth__box--login-txt">
+                    <img style="display:block; margin-bottom:32px;"
+                        src="{{ url_for('static', filename='img/login-page-img.jpg')}}" alt="pdf-tools">
+                    <h1 class="title2">Log in to your workspace</h1>
+                    <p>Enter your email and password to access your iLovePDF account. You are one step closer to
+                        boosting your document productivity.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./static/js/abcd.js"></script>
+</body>
+
+</html>

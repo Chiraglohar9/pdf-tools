@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link href="../static/css/abcd.css" rel="stylesheet">
+</head>
+<body class="clean register lang-en-US">
+     <div class="main">
+        <div class="auth">
+            <div class="auth__form">
+                <div class="auth__box">
+                    <h2 class="form__title">Create new account</h2>
+                    <form id="signupForm" action="{{ url_for('register') }}" method="post">
+                        <input type="hidden" name="_csrf-ilovepdf" value="EhTs-Hp9z_xNFG2ZIIQ68PpQXJTiTs3fJtHliiUU0WYjdbbLSQz-tytFL65l1wycnTcf96F5gIkU6IDBU2ayFQ==">
+                        <div class="form__group">
+                            <div class="field-name required">
+                                <div class="input--icon input--user">
+                                    <input type="text" id="name" class="input" name="SignupForm[name]" placeholder="Name" autofocus aria-required="true">
+                                </div>
+                                <div class="help-block"></div>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <div class="field-signupEmail required">
+                                <div class="input--icon input--email">
+                                    <input type="text" id="signupEmail" class="input" name="SignupForm[email]" placeholder="Email" aria-required="true">
+                                </div>
+                                <div class="help-block"></div>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <div class="field-password required">
+                                <div class="input--icon input--lock">
+                                    <input type="password" id="password" class="input" name="SignupForm[password]" placeholder="Password" aria-required="true">
+                                </div>
+                                <div class="help-block"></div>
+                            </div>
+                        </div>
+                        <input type="hidden" id="signupform-timezone" name="SignupForm[timezone]" value="UTC">
+                        <div class="form-actions">
+                            <button type="submit" class="btn" id="registerButton">Sign up <i class="m-icon-swapright m-icon-white"></i></button>
+                        </div>
+                        <div class="create-account">
+                            <p>Already a member? <a href="{{ url_for('login') }}" id="goLogin">Log in</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="auth__info">
+                <div class="auth__box auth__box--signup-txt">
+                    <img style="display:block; margin-bottom:32px;"
+                         src="{{ url_for('static', filename='img/signup-page-img.jpg')}}" alt="pdf-tools">
+                    <h1 class="title2">PDF tools for productive people</h1>
+                    <p>iLovePDF helps you convert, edit, e-sign, and protect PDF files quickly and easily. Enjoy a full suite of tools to effectively manage documents —no matter where you’re working.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <script src="./static/js/abcd.js"></script>
+</body>
+</html>

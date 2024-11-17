@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .navbar {
+    z-index: 99;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white !important;
+    position: fixed;
+
+    width: 100%;
+  }
+  .logo {
+    font-weight: 800;
+    font-size: large;
+    margin-right: 80px;
+    margin-left: 25px;
+    cursor: pointer;
+    color: #e5322d;
+  }
+  .nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .nav-items .menu a {
+    font-size: 15px;
+    font-weight: 550;
+    margin: 22px;
+    color: #47474f;
+    text-decoration: none;
+  }
+  .nav-btn button {
+    padding: 10px 18px;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    background-color: #e5322d;
+    color: white;
+    margin: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .link {
+    color: white;
+    margin: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+
+  }
+  .title,
+  .user-trust {
+    text-align: center;
+    padding: 90px;
+  }
+  .title h1,
+  .user-trust h1 {
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 52px;
+  }
+
+  .title p,
+  .user-trust p {
+    font-size: 22px;
+    color: #666668;
+    line-height: 30px;
+    margin-bottom: -30px;
+  }
+
+  .title p,
+  .user-trust p {
+    font-size: 22px;
+    color: #666668;
+    line-height: 30px;
+    margin-bottom: -30px;
+  }
+
+  .tool {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding-top: -1px;
+    padding-bottom: 8vw;
+  }
+  .tool a {
+    background-color: white;
+    padding: 1vw 2.3vw;
+    height: 16vw;
+    line-height: 1.5vw;
+    text-decoration: none;
+    color: black;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  .tool p {
+    width: 14vw;
+    color: #959699;
+    font-size: 14px;
+  }
+  .tool div,
+  h3 {
+    padding-top: 20px;
+  }
+  .tool p {
+    padding-top: 8px;
+  }
+  .details .info {
+    width: 23vw;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-weight: 500;
+  }
+  .info h2 {
+    margin-bottom: 15px;
+  }
+  .info p {
+    color: #7e8085;
+  }
+  .info a {
+    color: #e5322d;
+    font-weight: 700;
+  }
+  .info a:hover {
+    color: black;
+  }
+  .images img {
+    margin: 65px;
+  }
+  input[type="file"] {
+    display: none;
+  }
+  label {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #f5f5fa;
+    background-color: #e5322d;
+    text-align: center;
+    padding: 30px 70px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+    margin-left: 40%;
+  }
+  label:hover {
+    background-color: #bd060a;
+  }
+  .page-footer {
+    background-color: white;
+    color: #47474f;
+    display: flex;
+    align-items: center;
+    margin-top: 21%;
+    font-size: 12px;
+    padding: 15px 20px;
+  }
+
+  /* scan page css */
+  .scanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin-top: -2vw;
+    gap: 30px;
+  }
+  .step {
+    background-color: white;
+    width: 360px;
+    max-width: 100%;
+    height: 26vw;
+    padding: 70px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  .scan-title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 30px;
+    color: #33333b;
+    text-align: center;
+    margin-top: -30px;
+  }
+  .scan-para {
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 40px;
+    width: 19vw;
+  }
+  .step img {
+    height: 170px;
+    width: 170px;
+  }
